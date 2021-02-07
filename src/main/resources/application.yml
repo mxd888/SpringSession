@@ -1,0 +1,14 @@
+spring:
+  session:
+    store-type: redis    # 会话存储类型
+    timeout: 60
+    hazelcast:
+      flush-mode: on_save
+    redis:
+      namespace: spring.session
+  redis:
+    host: 112.124.96.85
+    password: mixiaodong
+    port: 6379
+server:
+  port: 8080
